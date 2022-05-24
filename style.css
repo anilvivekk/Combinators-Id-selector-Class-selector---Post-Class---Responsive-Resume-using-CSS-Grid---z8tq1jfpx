@@ -8,15 +8,22 @@
 
 /* Write CSS code below */
 .main-content{
+    min-height: 1000px;
+    width: 90%;
     display: grid;
     grid-template-columns: 300px 700px;
-    min-height: 1000px;
 }
+
 .left-section{
-    border: 1px solid black;
-    
+    grid-column: span 1;
+    background-color: antiquewhite;
 }
+
 .right-section{
-    border: 1px solid red;
-    width: 90%;
+    grid-column: span 1/ span 2;
+    background-color: rgb(148, 190, 190);
+}
+
+.left-content{
+    padding: 1 rem;
 }
